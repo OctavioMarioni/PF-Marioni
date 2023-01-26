@@ -1,12 +1,9 @@
-@import "variables";
 
 .tarjeta{
 
     @extend %tarjeta;
 
     box-shadow: $sombra;
-    
-
 
     img{
         
@@ -19,7 +16,6 @@
         
         
     }
-
 
     .descripcionTarjeta{
         display: flex;
@@ -37,24 +33,13 @@
         padding: 0px 8px;
     
         button{
-            @extend %button;
+            @include button(black,red);
             &:hover{
                 background-color: $colorSecundario;
             }
 
           }
-      }
-
-
-
-
-
-
-
-    
-   
-
-   
+      }   
 }
 
 

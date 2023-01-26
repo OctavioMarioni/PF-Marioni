@@ -1,179 +1,25 @@
-header {
-  grid-area: header;
-  background-size: cover;
-}
-
 .tarjeta {
-  box-shadow: 6px 10px 13px -3px rgba(0, 0, 0, 0.72);
-}
-.tarjeta img {
-  width: 320px;
-  height: 170px;
-  border-radius: 20px;
-  align-self: center;
-  padding: 8px;
-  padding-top: 10px;
-}
-.tarjeta .descripcionTarjeta {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 8px;
-  padding: 10px;
-}
-.tarjeta .botonesTarjeta {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  width: 100%;
-  padding: 0px 8px;
-}
-.tarjeta .botonesTarjeta button:hover {
-  background-color: rgb(59, 59, 59);
-}
-
-footer {
-  grid-area: footer;
-  background-color: rgb(59, 59, 59);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5px;
+  width: 330px;
+  height: 410px;
+  margin: 40px;
+  background-color: rgb(71, 71, 71);
+  border-radius: 15px;
   color: white;
 }
 
-.footerDerecha {
-  width: 33%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+header {
+  background-image: url(../assets/img/carrusel1.jpg);
+  grid-area: header;
   justify-content: center;
-}
-.footerDerecha i {
-  padding: 10px;
-}
-
-.footerMedio {
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.footerMedio ul li {
-  list-style: none;
-}
-
-.footerIzquierda {
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.footerIzquierda p {
-  justify-self: center;
-}
-
-@media (max-width: 820px) {
-  footer {
-    flex-direction: column;
-  }
-}
-.tarjetas {
-  grid-area: tarjetas;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: rgb(6, 14, 61);
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.bodyUsuarios {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto 325px 700px auto;
-  grid-template-areas: "nav nav" "header header" "mainFormulario mainFormulario" "footer footer";
-}
-
-.mainFormulario {
-  grid-area: mainFormulario;
-  background-color: rgb(6, 14, 61);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media (max-width: 576px) {
-  .mainFormulario {
-    background: none;
-    height: auto;
-  }
-}
-.formulario {
-  background-color: white;
-  min-height: 399px;
-  width: 550px;
-  padding: 80px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  border-radius: 30px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-@media (max-width: 576px) {
-  .formulario {
-    border-radius: 0px;
-  }
-}
-.formularioInicio {
-  gap: 35px;
-  display: flex;
-  flex-direction: column;
-}
-.formularioInicio button:hover {
-  background-color: rgb(59, 59, 59);
-}
-.formularioInicio .itemFormulario input[type=text], .formularioInicio .itemFormulario input[type=password] {
-  border: 1px solid;
-  height: 55px;
-  width: 100%;
-  outline: none;
-  border-radius: 100px;
-}
-.formularioInicio .itemFormulario label {
-  margin-bottom: 10px;
-  position: absolute;
-  padding: 0 10px;
-  transform: translate(10px, -10px);
-  font-size: 14px;
-  background-color: white;
-}
-
-.headerForm {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 50px;
-}
-.headerForm h2 {
-  font-size: 40px;
-}
-
-.bodyCatalogo {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "nav nav nav nav" "header header header header" "tarjetas tarjetas tarjetas tarjetas" "footer footer footer footer";
-}
-
-main {
-  grid-area: main;
-  background-color: rgb(6, 14, 61);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .bodyInicio {
@@ -234,28 +80,193 @@ main {
   margin: 10px;
 }
 
+main {
+  grid-area: main;
+  background-color: rgb(6, 14, 61);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .padre1, .padre2, .padre3 {
   color: white;
 }
 
-.tarjeta .botonesTarjeta button, .formularioInicio button {
-  border-radius: 10px;
-  color: white;
-  background-color: black;
+.tarjetas {
+  grid-area: tarjetas;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(6, 14, 61);
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .tarjeta {
+  box-shadow: 6px 10px 13px -3px rgba(0, 0, 0, 0.72);
+}
+.tarjeta img {
+  width: 320px;
+  height: 170px;
+  border-radius: 20px;
+  align-self: center;
+  padding: 8px;
+  padding-top: 10px;
+}
+.tarjeta .descripcionTarjeta {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 330px;
-  height: 410px;
-  margin: 40px;
-  background-color: rgb(71, 71, 71);
-  border-radius: 15px;
+  margin: 8px;
+  padding: 10px;
+}
+.tarjeta .botonesTarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  padding: 0px 8px;
+}
+.tarjeta .botonesTarjeta button {
+  background-color: black;
+  border-radius: 10px;
+  color: red;
+}
+.tarjeta .botonesTarjeta button:hover {
+  background-color: rgb(59, 59, 59);
+}
+
+.bodyCatalogo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "nav nav " "header header" "tarjetas tarjetas" "footer footer";
+}
+
+.bodyUsuarios {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto 700px auto;
+  grid-template-areas: "nav nav" "header header" "mainFormulario mainFormulario" "footer footer";
+}
+
+.mainFormulario {
+  grid-area: mainFormulario;
+  background-color: rgb(6, 14, 61);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .mainFormulario {
+    background: none;
+    height: auto;
+  }
+}
+.formulario {
+  background-color: white;
+  min-height: 399px;
+  width: 550px;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 576px) {
+  .formulario {
+    border-radius: 0px;
+  }
+}
+.formularioDatos {
+  gap: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.formularioDatos button {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
+.formularioDatos button:hover {
+  background-color: rgb(59, 59, 59);
+}
+.formularioDatos .itemFormulario input[type=text], .formularioDatos .itemFormulario input[type=password] {
+  border: 1px solid;
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border-radius: 100px;
+}
+.formularioDatos .itemFormulario label {
+  margin-bottom: 10px;
+  position: absolute;
+  padding: 0 10px;
+  transform: translate(10px, -10px);
+  font-size: 14px;
+  background-color: white;
+}
+
+.headerForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.headerForm h2 {
+  font-size: 40px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(59, 59, 59);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
   color: white;
 }
 
+.footerDerecha {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.footerDerecha i {
+  padding: 10px;
+}
+
+.footerMedio {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footerMedio ul li {
+  list-style: none;
+}
+
+.footerIzquierda {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footerIzquierda p {
+  justify-self: center;
+}
+
+@media (max-width: 820px) {
+  footer {
+    flex-direction: column;
+  }
+}
 nav {
   grid-area: nav;
 }

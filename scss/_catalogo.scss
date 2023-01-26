@@ -1,9 +1,9 @@
 .bodyCatalogo{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: "nav nav nav nav"
-                            "header header header header"
-                            "tarjetas tarjetas tarjetas tarjetas"
-                            "footer footer footer footer";
+    grid-template-areas: "nav nav "
+                            "header header"
+                            "tarjetas tarjetas"
+                            "footer footer";
 } 

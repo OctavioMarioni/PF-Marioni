@@ -1,16 +1,16 @@
-@import "header";
-@import "tarjeta";
-@import "footer";
-@import "tarjetas";
-@import "formularios";
-@import "catalogo";
-@import "main";
-@import "inicio";
-@import "Qsomos";
-@import "extend";
 @import "variables";
-
-
+@import "mixin";
+@import "extend";
+@import "reset";
+@import "header";
+@import "inicio";
+@import "main";
+@import "Qsomos";
+@import "tarjetas";
+@import "tarjeta";
+@import "catalogo";
+@import "formularios";
+@import "footer";
 
 
 nav{
