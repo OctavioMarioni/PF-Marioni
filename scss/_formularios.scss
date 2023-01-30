@@ -1,6 +1,4 @@
 
-
-
 .bodyUsuarios{ 
     display: grid;
     grid-template-columns: 50% 50%;
@@ -17,23 +15,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
-@media (max-width: 576px) {
-    .mainFormulario {
-      background: none;
-      height: auto;
-    }
-  }
 
-
-
-
-
-
-     
-    
-    
 
 .formulario{
     background-color: white;
@@ -49,14 +34,9 @@
 
 }
 
-@media (max-width:576px){
-    .formulario{
-        border-radius: 0px;
 
 
 
-    }
-}
 
 
 .formularioDatos{
@@ -89,8 +69,8 @@
         transform: translate(10px, -10px);
         font-size: 14px;
         background-color: white;
-    
-    
+
+            
     
      }
     }
@@ -99,13 +79,40 @@
     .headerForm{
         display: flex;
         flex-direction: column;
-        margin-bottom: 50px;        
+        margin-bottom: 50px;
         h2{
             font-size: 40px;
+
         
         
     }
 }
+@media (max-width:576px){
+
+    .mainFormulario{
+        background: none;
+        height: auto;
+    }
+    .formulario{
+        border-radius: 0px;
+        width: 100%;
+    
+    }
+    .headerForm{
+        align-items: center;
+    }
+}
+
+@media (max-width:476px){
+    .formulario{
+        border-radius: 0px;
+        width: 100%;
+        padding: 10px;
+    
+    }
+}
+
+
   
     
     

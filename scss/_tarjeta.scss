@@ -33,7 +33,7 @@
         padding: 0px 8px;
     
         button{
-            @include button(black,red);
+            @include button(black,white);
             &:hover{
                 background-color: $colorSecundario;
             }

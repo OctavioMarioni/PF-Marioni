@@ -1,0 +1,10 @@
+.navbar {
+    grid-area: nav;
+    background-color: $colorSecundario !important;
+    a{
+        color: aliceblue;
+    }
+    button{
+        border-color: white;
+    }
+  }

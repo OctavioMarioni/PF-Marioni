@@ -17,9 +17,10 @@
 }
 
 header {
-  background-image: url(../assets/img/carrusel1.jpg);
   grid-area: header;
-  justify-content: center;
+}
+header img {
+  width: 100%;
 }
 
 .bodyInicio {
@@ -129,7 +130,7 @@ main {
 .tarjeta .botonesTarjeta button {
   background-color: black;
   border-radius: 10px;
-  color: red;
+  color: white;
 }
 .tarjeta .botonesTarjeta button:hover {
   background-color: rgb(59, 59, 59);
@@ -155,14 +156,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
-@media (max-width: 576px) {
-  .mainFormulario {
-    background: none;
-    height: auto;
-  }
-}
 .formulario {
   background-color: white;
   min-height: 399px;
@@ -176,11 +172,6 @@ main {
   margin-bottom: 40px;
 }
 
-@media (max-width: 576px) {
-  .formulario {
-    border-radius: 0px;
-  }
-}
 .formularioDatos {
   gap: 35px;
   display: flex;
@@ -219,6 +210,26 @@ main {
   font-size: 40px;
 }
 
+@media (max-width: 576px) {
+  .mainFormulario {
+    background: none;
+    height: auto;
+  }
+  .formulario {
+    border-radius: 0px;
+    width: 100%;
+  }
+  .headerForm {
+    align-items: center;
+  }
+}
+@media (max-width: 476px) {
+  .formulario {
+    border-radius: 0px;
+    width: 100%;
+    padding: 10px;
+  }
+}
 footer {
   grid-area: footer;
   background-color: rgb(59, 59, 59);
@@ -267,6 +278,13 @@ footer {
     flex-direction: column;
   }
 }
-nav {
+.navbar {
   grid-area: nav;
+  background-color: rgb(59, 59, 59) !important;
+}
+.navbar a {
+  color: aliceblue;
+}
+.navbar button {
+  border-color: white;
 }
