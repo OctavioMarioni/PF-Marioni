@@ -16,6 +16,17 @@
   box-sizing: 0;
 }
 
+.navbar {
+  grid-area: nav;
+  background-color: rgb(59, 59, 59) !important;
+}
+.navbar a {
+  color: rgb(124, 124, 124);
+}
+.navbar button {
+  border-color: white;
+}
+
 header {
   grid-area: header;
 }
@@ -277,14 +288,4 @@ footer {
   footer {
     flex-direction: column;
   }
-}
-.navbar {
-  grid-area: nav;
-  background-color: rgb(59, 59, 59) !important;
-}
-.navbar a {
-  color: aliceblue;
-}
-.navbar button {
-  border-color: white;
 }

@@ -1,8 +1,8 @@
-nav{
+.navbar{
     grid-area: nav;
     background-color: $colorSecundario !important;
     a{
-        color: aliceblue;
+        color: rgb(124, 124, 124);
     }
     button{
         border-color: white;
